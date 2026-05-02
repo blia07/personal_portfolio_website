@@ -131,7 +131,7 @@
     <section id="work" class="work">
         <h2>Work Experience</h2>
         <div class="work-content">
-            <div class="work-item">
+            <div class="work-item" data-work="vr-intern" role="button" tabindex="0">
                 <div class="work-company">University of Texas Rio Grande Valley</div>
                 <div class="work-header">
                     <h3>VR & Human Factors Research Intern</h3>
@@ -140,9 +140,10 @@
                 </div>
                 <p>Developing a standalone C++ tool to automate vascular modeling by extracting subroutines from the SimVascular source code to convert .ctgr segmentations into lofted .vtp surfaces.</p>
                 <p>Co-authored a paper accepted to the IISE Annual Conference 2026 and currently designing a secondary research survey using Qualtrics and JavaScript for data collection.</p>
+                <span class="click-hint">Click for more details</span>
             </div>
             
-            <div class="work-item">
+            <div class="work-item" data-work="ta" role="button" tabindex="0">
                 <div class="work-company">University of Texas Rio Grande Valley</div>
                 <div class="work-header">
                     <h3>Teacher Assistant</h3>
@@ -150,9 +151,10 @@
                     <span class="work-date">August 2024 – May 2025</span>
                 </div>
                 <p>Graded and provided detailed feedback on 70 students’ Digital Image Processing and C++ assignments by reviewing code, debugging, and offering personalized support.</p>
+                <span class="click-hint">Click for more details</span>
             </div>
 
-            <div class="work-item">
+            <div class="work-item" data-work="tutor" role="button" tabindex="0">
                 <div class="work-company">University of Texas Rio Grande Valley</div>
                 <div class="work-header">
                     <h3>Student Academic Tutor</h3>
@@ -160,6 +162,7 @@
                     <span class="work-date">February 2023 – December 2024</span>
                 </div>
                 <p>Assisted over 50 students per course in questions and assignments for Computer Science 2, C#, Assembly Language, Pre-Calculus, and College Algebra in English and Spanish.</p>
+                <span class="click-hint">Click for more details</span>
             </div>
         </div>
     </section>
@@ -262,13 +265,31 @@
     <!-- Project Modal -->
     <div id="project-modal" class="modal">
         <div class="modal-content">
-            <span class="modal-close">&times;</span>
+            <span class="modal-close" data-close-modal="project">&times;</span>
             <div id="modal-body">
                 <h2 id="modal-title"></h2>
                 <span id="modal-date" class="modal-date"></span>
                 <div id="modal-media" class="modal-media"></div>
                 <div id="modal-description" class="modal-description"></div>
                 <div id="modal-tech" class="modal-tech"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience Modal (same layout as projects: media, description, skills) -->
+    <div id="work-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" data-close-modal="work">&times;</span>
+            <div id="work-modal-body">
+                <div id="work-modal-employer" class="work-modal-employer"></div>
+                <h2 id="work-modal-title"></h2>
+                <div class="work-modal-locdate-row">
+                    <span id="work-modal-location" class="work-modal-location"></span>
+                    <span id="work-modal-date-only" class="work-modal-date"></span>
+                </div>
+                <div id="work-modal-media" class="modal-media"></div>
+                <div id="work-modal-description" class="modal-description"></div>
+                <div id="work-modal-tech" class="modal-tech"></div>
             </div>
         </div>
     </div>
